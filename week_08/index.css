@@ -1,0 +1,21 @@
+body{
+    background-color: rgb(255, 241, 113);
+}
+h2 {
+    color: #ff0000;
+    
+}
+
+.contain img {
+    max-width:  250px;
+    height: 250px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    
+}
+.back {
+    margin-top: 50px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+}
