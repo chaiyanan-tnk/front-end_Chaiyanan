@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>แบบฟอร์มสมัครงาน</title>
+    <link rel="stylesheet" href="FormStyling.css">
+</head>
+<body>
+    <h1>แบบฟอร์มสมัครงาน</h1>
+
+    <center>
+        <form method="get" class="back">
+            <h4>ใส่ชื่อ-นามสกุล</h4>
+            <input type="text" name="name" placeholder="กรุณาใส่ชื่อและนามสกุล" required>
+            <br>
+            <h4>เลือกเพศ</h4>
+            <input type="radio" name="sex" value="men" required> เพศชาย
+            <input type="radio" name="sex" value="women" required> เพศหญิง
+            <input type="radio" name="sex" value="Lgbt" required> เพศทางเลือก
+            <br>
+            <h4>ภาษาโปรแกรมที่ถนัด</h4>
+            <input type="checkbox" name="program[]" value="python"> ถนัดภาษา Python<br>
+            <input type="checkbox" name="program[]" value="cpp"> ถนัดภาษา C++<br>
+            <input type="checkbox" name="program[]" value="java"> ถนัดภาษา Java<br>
+            <input type="checkbox" name="program[]" value="html"> ถนัดภาษา HTML CSS
+            <br>
+            <h4>ใส่อีเมล</h4>
+            <input type="email" name="email" placeholder="กรุณาใส่อีเมล" required>
+            <br>
+            <h4>ใส่เบอร์โทรศัพท์</h4>
+            <input type="number" name="number" placeholder="กรุณาใส่เบอร์โทรศัพท์" required>
+            <br>
+            <h4>ตำแหน่งที่ต้องการสมัคร</h4>
+            <label for="position">ตำแหน่ง:</label>
+            <select id="position" name="position" required>
+                <option value="">-- กรุณาเลือกตำแหน่ง --</option>
+                <option value="นักพัฒนาเว็บ">นักพัฒนาเว็บ</option>
+                <option value="นักวิเคราะห์ข้อมูล">นักวิเคราะห์ข้อมูล</option>
+                <option value="นักออกแบบ UI/UX">นักออกแบบ UI/UX</option>
+            </select>
+            <br>
+            <h4>อัพโหลดรูป</h4>
+            <input type="file" name="image" accept="image/*" required>
+            <br>
+            <h4>ข้อความเพิ่มเติม</h4>
+            <textarea name="textpp" placeholder="กรอกข้อความเพิ่มเติม" required></textarea>
+            <br>
+            <input type="submit" value="ส่งใบสมัคร">
+        </form>
+    </center>
+</body>
+</html>
