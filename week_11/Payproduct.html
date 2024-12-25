@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ชำระเงินสินค้า</title>
+    <link rel="stylesheet" href="Payproduct.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="ho"><a href="file:///C:/Users/Q/Documents/GitHub/front-end_Chaiyanan/week_11/home.html">หน้าหลัก</a></h1>
+            <button class="logout-button"> <a href="file:///C:/Users/Q/Documents/GitHub/front-end_Chaiyanan/week_11/login.html">ออกจากระบบ</a></button>
+        </header>
+        <main>
+            <div class="payment">
+                <h2>ชำระเงินสินค้า</h2>
+                <h3 class="section-title">ช่องทางการชำระเงิน</h3>
+                <form action="success.html" method="post">
+                    <label for="fullname">ชื่อ-นามสกุล</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="ชื่อ-นามสกุล" required>
+                    
+                    <label for="phone">เบอร์โทร</label>
+                    <input type="tel" id="phone" name="phone" placeholder="เบอร์โทร" required>
+                    
+                    <label for="address">ที่อยู่</label>
+                    <textarea id="address" name="address" placeholder="ที่อยู่" rows="3" required></textarea>
+                    
+                    <button onclick="location.href='file:///C:/Users/Q/Documents/GitHub/front-end_Chaiyanan/week_11/qrcode.html';" class="submit">ถัดไป</button>
+                </form>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
